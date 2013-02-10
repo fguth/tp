@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>GW2 Trading Post Calculator</title>
+    <meta name="description" content="tpcalc is a profit calculator for use with the Guild Wars 2 Trading Post">
+    <meta name="keywords" content="guild wars, guild wars 2, trading post, calculator, profit, prices, item database">
+
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/calculator.js"></script>
+  </head>
+
+  <body onload="init();">
+    <div class="calculator wrap">
+      <form name="trade">
+      <div class="buy-price row">
+        <span class="row-header">
+          <h2>buy price</h2>
+          <a id="buy-break-even" class="function" href="javascript:setField('buy',-1);"></a>
+        </span>
+        <input id="buy-gold" class="money gold" type="text" maxlength="4" onchange="calculate();" pattern="\d*" tabindex="1">
+        <input id="buy-silver" class="money center silver" type="text" maxlength="2" onchange="calculate();" pattern="\d*" tabindex="2">
+        <input id="buy-copper" class="money copper" type="text" maxlength="2" onchange="calculate();" value="" pattern="\d*" tabindex="3">
+      </div>
+      <div class="sell-price row">
+        <span class="row-header">
+          <h2>sell price</h2>
+          <a id="sell-break-even" class="function" href="javascript:setField('sell',0);"></a>
+        </span>
+        <input id="sell-gold" class="money gold" type="text" maxlength="4" onchange="calculate();" pattern="\d*" tabindex="4">
+        <input id="sell-silver" class="money center silver" type="text" maxlength="2" onchange="calculate();" pattern="\d*" tabindex="5">
+        <input id="sell-copper" class="money copper" type="text" maxlength="2" onchange="calculate();" value="" pattern="\d*" tabindex="6">
+      </div>
+      <div class="quantity row">
+        <span class="row-header">
+          <h2>quantity</h2>
+        </span>
+        <input id="quantity" name="quantity" type="text" maxlength="5" onchange="calculate();" value="1" pattern="\d*" tabindex="7">
+      </div>
+      </form>
+      <div class="result row">
+        <span id="profit" class="money negative"><span class="copper">-1</span></span>
+        <span class="sub" id="profit-percent"></span>
+      </div>
+    </div>
+  </body>
+</html>
