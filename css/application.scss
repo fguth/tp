@@ -31,9 +31,9 @@ h2 {
   margin: 0; }
 
 .wrap {
-  width: 280px;
+  width: 270px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   @include clearfix;
 }
 
@@ -93,7 +93,7 @@ input[type="text"] {
   float: left;
   background: #eee;
   @include box-sizing(border-box);
-  width: 88px;
+  width: 84px;
   padding: 10px;
   border: none;
   border-radius: 3px;
@@ -106,16 +106,16 @@ input[type="text"] {
 
   &.center { margin: 0 8px;}
 
-  &.gold    { background: #eee url('../img/gold.png')   no-repeat 63px center; color: #bc9c31; }
-  &.silver  { background: #eee url('../img/silver.png') no-repeat 63px center; color: #b7b7b7; }
-  &.copper  { background: #eee url('../img/copper.png') no-repeat 63px center; color: #9b5a28; }
+  &.gold    { background: #eee url('../img/gold.png')   no-repeat 61px center; color: #bc9c31; }
+  &.silver  { background: #eee url('../img/silver.png') no-repeat 61px center; color: #b7b7b7; }
+  &.copper  { background: #eee url('../img/copper.png') no-repeat 61px center; color: #9b5a28; }
 
   &:focus {
     outline: none;
     border: 2px solid #aaa;
     @include box-sizing(border-box);
     padding: 8px;
-    background-position: 61px center;
+    background-position: 59px center;
   }
 }
 

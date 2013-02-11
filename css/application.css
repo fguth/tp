@@ -33,9 +33,9 @@ h2 {
   margin: 0; }
 
 .wrap {
-  width: 280px;
+  width: 270px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   *zoom: 1; }
   .wrap:before, .wrap:after {
     content: " ";
@@ -99,7 +99,7 @@ input[type="text"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 88px;
+  width: 84px;
   padding: 10px;
   border: none;
   border-radius: 3px;
@@ -113,13 +113,13 @@ input[type="text"] {
   input[type="text"].center {
     margin: 0 8px; }
   input[type="text"].gold {
-    background: #eeeeee url("../img/gold.png") no-repeat 63px center;
+    background: #eeeeee url("../img/gold.png") no-repeat 61px center;
     color: #bc9c31; }
   input[type="text"].silver {
-    background: #eeeeee url("../img/silver.png") no-repeat 63px center;
+    background: #eeeeee url("../img/silver.png") no-repeat 61px center;
     color: #b7b7b7; }
   input[type="text"].copper {
-    background: #eeeeee url("../img/copper.png") no-repeat 63px center;
+    background: #eeeeee url("../img/copper.png") no-repeat 61px center;
     color: #9b5a28; }
   input[type="text"]:focus {
     outline: none;
@@ -128,7 +128,7 @@ input[type="text"] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 8px;
-    background-position: 61px center; }
+    background-position: 59px center; }
 
 input[type="reset"] {
   float: right;
