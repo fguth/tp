@@ -24,6 +24,9 @@ body {
   background-image: -o-linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%);
   background-image: linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%); }
 
+body > div {
+  -webkit-transition: all 1s ease-in-out; }
+
 a {
   font-weight: bold;
   text-decoration: none;
