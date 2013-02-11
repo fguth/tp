@@ -16,12 +16,12 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fafafa;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(80%, #fafafa), color-stop(81%, whitesmoke), color-stop(100%, whitesmoke));
-  background-image: -webkit-linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%);
-  background-image: -moz-linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%);
-  background-image: -ms-linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%);
-  background-image: -o-linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%);
-  background-image: linear-gradient(top, #fafafa 0%, #fafafa 80%, whitesmoke 81%, whitesmoke 100%); }
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(85%, #fafafa), color-stop(86%, whitesmoke), color-stop(100%, whitesmoke));
+  background-image: -webkit-linear-gradient(top, #fafafa 0%, #fafafa 85%, whitesmoke 86%, whitesmoke 100%);
+  background-image: -moz-linear-gradient(top, #fafafa 0%, #fafafa 85%, whitesmoke 86%, whitesmoke 100%);
+  background-image: -ms-linear-gradient(top, #fafafa 0%, #fafafa 85%, whitesmoke 86%, whitesmoke 100%);
+  background-image: -o-linear-gradient(top, #fafafa 0%, #fafafa 85%, whitesmoke 86%, whitesmoke 100%);
+  background-image: linear-gradient(top, #fafafa 0%, #fafafa 85%, whitesmoke 86%, whitesmoke 100%); }
 
 a {
   font-weight: bold;
