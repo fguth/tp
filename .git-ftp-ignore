@@ -1,2 +1,3 @@
-application.scss
-bourbon/.*
+assets/css/application.scss
+assets/css/bourbon/.*
+assets/css/.sass-cache/.*
