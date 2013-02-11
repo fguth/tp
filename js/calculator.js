@@ -1,4 +1,4 @@
-/*	gw2tpcalc.js 
+/*	
 	Original Content Copyright 2012, Erland Kelley
 	Guild Wars 2 is a registered trademark of NCsoft Corporation.
 */
@@ -138,28 +138,5 @@ function fix() {
 		sellSilver.value = sellSilver.value.replace(/[^0-9]/g, ''); 
 	if (sellGold.value != sellGold.value.replace(/[^0-9]/g, '')) 
 		sellGold.value = sellGold.value.replace(/[^0-9]/g, '');
-		
-	// convert currencies
-	if (buyCopper.value > 99 && (document.activeElement != buyCopper)) {
-		buySilver.value = Math.floor(buyCopper.value / 100);
-		buyCopper.value -= buySilver.value * 100;
-		if (buySilver.value < 100) buyGold.value = "";
-	}
-
-	if (buySilver.value > 99 && (document.activeElement != buySilver)) {
-		buyGold.value = Math.floor(buySilver.value / 100);
-		buySilver.value -= buyGold.value * 100;
-	}
-	
-	if (sellCopper.value > 99 && (document.activeElement != sellCopper)) {
-		sellSilver.value = Math.floor(sellCopper.value / 100);
-		sellCopper.value -= sellSilver.value * 100;
-		if (sellSilver.value < 100) sellGold.value = "";
-	}
-
-	if (sellSilver.value > 99 && (document.activeElement != sellSilver)) {
-		sellGold.value = Math.floor(sellSilver.value / 100);
-		sellSilver.value -= sellGold.value * 100;
-	}
 	
 }
