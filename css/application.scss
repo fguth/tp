@@ -9,6 +9,7 @@ body {
 	background: #fafafa;
   margin: 0;
   position: absolute;
+  @include box-sizing(border-box);
   top: 50%;
   margin-top: -200px;
   padding: 00;
@@ -31,9 +32,10 @@ h2 {
   margin: 0; }
 
 .wrap {
-  width: 270px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+  @include box-sizing(border-box);
   @include clearfix;
 }
 
@@ -93,7 +95,7 @@ input[type="text"] {
   float: left;
   background: #eee;
   @include box-sizing(border-box);
-  width: 84px;
+  width: 81px;
   padding: 10px;
   border: none;
   border-radius: 3px;
