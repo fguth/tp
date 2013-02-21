@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BRR ~ GW2 Trading Post Calculator</title>
+    <meta name="description" content="tboraro:tp is an economic counselor for the Guild Wars 2 Trading Post">
+    <meta name="keywords" content="guild wars, guild wars 2, trading post, calculator, profit, prices, item database">
+    <link rel="stylesheet" type="text/css" href="assets/css/calc.css">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  </head>
+  <body onload="init();">
+    
+    <section id="action">
+      <header>
+        <h1>Guild Wars 2 Gold Mine</h1>
+        <h2>Choose a recipe and listen to our counselor</h2>
+      </header>
+      <form>
+        <select id="type">
+          <option value="0">Armor</option>
+          <option value="2">Bag</option>
+          <option value="3">Consumable</option>
+          <option value="4">Container</option>
+          <option value="5">Crafting Material</option>
+          <option value="6">Gathering</option>
+          <option value="7">Gizmo</option>
+          <option value="11">Mini</option>
+          <option value="13">Tool</option>
+          <option value="15">Trinket</option>
+          <option value="16">Trophy</option>
+          <option value="17">Upgrade Component</option>
+          <option value="18">Weapon</option>
+          <option value="all">All (turtle mode)</option>
+        </select>
+        <a href="#" id="single">If you want that one big sell</a>
+        <a href="#" id="multiple">If you are a patient guy</a>
+      </form>
+    </section>
+
+    <section id="loader">
+      <header>
+        <h1>Just wait</h1>
+        <h2>Our economy experts are doing the magic for you</h2>
+      </header>
+    </section>
+
+    <section id="results">
+      <header>
+        <h1>And here it is</h1>
+        <h2>The most profitable items your money can buy</h2>
+      </header>
+      <ul></ul>
+    </section>
+  
+    <section id="calc">
+      <div class="calculator wrap">
+        <form name="trade">
+        <div class="buy-price row">
+          <span class="row-header">
+            <h2>buy price</h2>
+            <a id="buy-break-even" class="function" href="javascript:setField('buy',-1);"></a>
+          </span>
+          <input id="buy-gold" class="money gold" type="text" maxlength="4" onchange="calculate();" pattern="\d*" tabindex="1">
+          <input id="buy-silver" class="money center silver" type="text" maxlength="2" onchange="calculate();" pattern="\d*" tabindex="2">
+          <input id="buy-copper" class="money copper" type="text" maxlength="2" onchange="calculate();" value="" pattern="\d*" tabindex="3">
+        </div>
+        <div class="sell-price row">
+          <span class="row-header">
+            <h2>sell price</h2>
+            <a id="sell-break-even" class="function" href="javascript:setField('sell',0);"></a>
+          </span>
+          <input id="sell-gold" class="money gold" type="text" maxlength="4" onchange="calculate();" pattern="\d*" tabindex="4">
+          <input id="sell-silver" class="money center silver" type="text" maxlength="2" onchange="calculate();" pattern="\d*" tabindex="5">
+          <input id="sell-copper" class="money copper" type="text" maxlength="2" onchange="calculate();" value="" pattern="\d*" tabindex="6">
+        </div>
+        <div class="quantity row">
+          <span class="row-header">
+            <h2>quantity</h2>
+          </span>
+          <input id="quantity" name="quantity" type="text" maxlength="5" onchange="calculate();" value="1" pattern="\d*" tabindex="7">
+          <input type="reset" value="reset">
+        </div>
+        </form>
+      </div>
+      <div class="result row">
+        <span id="profit" class="money negative"><span class="copper">-1</span></span>
+        <span class="sub" id="profit-percent"></span>
+      </div>   
+    </section>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/calculator.js"></script>
+    
+  </body>
+</html>
